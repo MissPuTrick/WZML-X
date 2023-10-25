@@ -120,7 +120,7 @@ def direct_link_generator(link):
         return debrid_link(link)
     elif config_dict['REAL_DEBRID_API'] and any(x in domain for x in debrid_sites):
         return real_debrid(link)
-    elif any(x in domain for x in ['filelions.com', 'filelions.live', 'filelions.to', 'filelions.online']):
+    elif any(x in domain for x in ['filelions.com', 'filelions.live', 'filelions.to', 'filelions.online', 'fviplions.com', 'cabecabean.lol']):
         return filelions(link)
     elif 'mediafire.com' in domain:
         return mediafire(link)
